@@ -87,6 +87,250 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/**********************************  Rules Moibile *************************/
+
+nav {
+  background-color: red;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.menu {
+  display: none;
+}
+
+.burger {
+  background-color: blue;
+  width: 20vh;
+  height: 10vh;
+  margin-left: 2em;
+}
+
+.icones {
+  background-color: goldenrod;
+  width: 20vh;
+  height: 10vh;
+  margin-right: 1em;
+}
+
+
+.article1 {
+  background-color: blue;
+  width: 100%;
+  height: 40vh;
+  margin: 1em 0;
+}
+
+.article2 {
+  background-color: greenyellow;
+  width: 100%;
+  height: 40vh;
+  margin: 1em 0;
+}
+
+aside {
+  background-color: chocolate;
+  width: 100%;
+  height: 40vh;
+}
+
+footer {
+  display: none;
+}
+
+/**********************************  Rules tab *************************/
+
+@media screen and (min-width: 724px) {
+
+  header {
+    background-color: rosybrown;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+  }
+
+  nav {
+    background-color: red;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .burger {
+    display: none;
+  }
+
+
+  .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .accueil,
+  .contact,
+  .panier {
+    background-color: aqua;
+    width: 20vh;
+    height: 10vh;
+
+  }
+
+  /*main {
+    display: flex;
+  }*/
+
+  .article1 {
+    background-color: blue;
+    width: 100%;
+    height: 40vh;
+    margin: 0.5em 0;
+    margin-inline: 0.5%;
+  }
+
+  .article2 {
+    background-color: greenyellow;
+    width: 100%;
+    height: 40vh;
+    margin: 0.5em 0;
+    margin-inline: 0.5%;
+  }
+
+  aside {
+    background-color: chocolate;
+    width: 100%;
+    height: 40vh;
+    margin: 0.5em 0;
+    margin-inline: 0.5%;
+  }
+
+  footer {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 40vh;
+    margin: 0.5em 0;
+    margin-inline: 0.5%;
+    display: flex;
+  }
+
+  .video {
+    background-color: red;
+    width: 50%;
+    height: 15vh;
+    display: flex;
+  }
+
+  .apropos {
+    background-color: plum;
+    width: 300%;
+    height: 15vh;
+
+  }
+}
+
+/**********************************  Rules Laptop *************************/
+
+@media screen and (min-width: 1024px) {
+
+  header {
+    background-color: rosybrown;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+  }
+
+  nav {
+    background-color: red;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .burger {
+    display: none;
+  }
+
+
+  .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .accueil,
+  .contact,
+  .panier {
+    background-color: aqua;
+    width: 20vh;
+    height: 10vh;
+
+  }
+
+  main {
+    display: flex;
+  }
+
+  .article1 {
+    background-color: blue;
+    width: 40%;
+    height: 40vh;
+  }
+
+  .article2 {
+    background-color: greenyellow;
+    width: 40%;
+    height: 40vh;
+    margin: 0.5em 0;
+    margin-inline: 0.5%;
+  }
+
+  aside {
+    background-color: chocolate;
+    width: 40%;
+    height: 40vh;
+  }
+
+  footer {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 40vh;
+    margin: 0.5em 0;
+    margin-inline: 0.5%;
+    display: flex;
+  }
+
+  .video {
+    background-color: red;
+    width: 50%;
+    height: 15vh;
+    display: flex;
+  }
+
+  .apropos {
+    background-color: plum;
+    width: 300%;
+    height: 15vh;
+
+  }
+}
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -180,9 +424,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +437,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -209,11 +454,11 @@ textarea {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -260,4 +505,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
