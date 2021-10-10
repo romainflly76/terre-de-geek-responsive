@@ -89,20 +89,161 @@
   
   /**********************************  Rules Mobile *************************/
   
- 
-    
+ header {
+     display: none;
+ }
+
+ nav {
+    background-color: #293039;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu {
+    display: none;
+  }
   
+  .burger {
+    background-color: #293039;
+    width: 20vh;
+    height: 7vh;
+    margin-left: 2em;
+    color: white;
+    font-size: 20px ;
+  }
+  
+  .icones {
+    background-color: #293039;
+    width: 20vh;
+    height: 7vh;
+    margin-right: 1em;
+    color: white;
+    font-size: 20px ;
+    text-align: center;
+  }
+    
+  .article1 {
+    background-color: white;
+    width: 100%;
+    height: 60vh;
+    margin: 1em 0;
+    display: flex;
+    border-bottom: 0.5px #293039 solid;
+    border-radius: 5px / 5px;
+    box-shadow: 2px 2px 12px #293039;
+  }
   
   
   /**********************************  Rules tab *************************/
+
+@media screen and (min-width: 724px) {
+
   
+  nav {
+    background-color: #293039;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .burger {
+    display: none;
+  }
+
+
+  .menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .accueil,
+  .contact,
+  .produits {
+    background-color: #293039;
+    width: 20vh;
+    height: 7vh;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+  }
   
   
   
    
   
   /**********************************  Rules Laptop *************************/
+  @media screen and (min-width: 1024px) {
+
+    header {
+      background-color: #293039;
+      width: 100%;
+      height: 17vh;
+      display: flex;
+      justify-content: center;  /* centrer la section*/
+      align-items: center;  
+      position: relative;
   
+    }
+    header>section {
+      background-color: #293039;
+      width: 60%;          /* largeur de la section*/
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      color: white;
+      font-size : 16px;
+      
+    }
+    
+    .figure {
+   
+      width: 15vh;
+      height: 15vh; /* ici tu aplique la taille voulue */
+      font-size: .5em; /* tu change la taille de ton atl */
+      margin-top: 5px;/*ici ton margin pour le centrer*/
+      margin-left: 60px;/* tout comme celui -ci */
+    }
+    
+  
+    nav {
+      background-color: #293039;
+      width: 100%;
+      height: 15vh;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+  
+    .burger {
+      display: none;
+    }
+  
+  
+    .menu {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+  
+    .accueil,
+    .contact,
+    .produits {
+      background-color: #293039;
+      width: 20vh;
+      height: 10vh;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+  
+    }
   
     
   
