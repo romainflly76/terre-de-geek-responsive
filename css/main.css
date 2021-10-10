@@ -87,8 +87,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/**********************************  Rules Moibile *************************/
+/**********************************  Rules Mobile *************************/
 
+header {
+  display: none;
+}
 nav {
   background-color: red;
   width: 100%;
@@ -116,6 +119,8 @@ nav {
   width: 20vh;
   height: 10vh;
   margin-right: 1em;
+  color: black;
+  font-size: 30px ;
 }
 
 
@@ -147,13 +152,7 @@ footer {
 
 @media screen and (min-width: 724px) {
 
-  header {
-    background-color: rosybrown;
-    width: 100%;
-    height: 15vh;
-    display: flex;
-  }
-
+  
   nav {
     background-color: red;
     width: 100%;
@@ -242,11 +241,34 @@ footer {
 @media screen and (min-width: 1024px) {
 
   header {
-    background-color: rosybrown;
+    background-color: #293039;
     width: 100%;
-    height: 15vh;
+    height: 17vh;
     display: flex;
+    justify-content: center;  /* centrer la section*/
+    align-items: center;  
+    position: relative;
+
   }
+  header>section {
+    background-color: #293039;
+    width: 60%;          /* largeur de la section*/
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size : 16px;
+    
+  }
+  
+  .figure {
+ 
+    width: 15vh;
+    height: 15vh; /* ici tu aplique la taille voulue */
+    font-size: .5em; /* tu change la taille de ton atl */
+    margin-top: 5px;/*ici ton margin pour le centrer*/
+    margin-left: 60px;/* tout comme celui -ci */
+  }
+  
 
   nav {
     background-color: red;
